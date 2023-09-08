@@ -17,8 +17,8 @@ int main(void)
 	letter = 'a';
 	while (letter <= 'z')
 	{
-		if (letter == 'q' || 'e')
-			continue;
+		if (letter == 'q' || letter == 'e')
+			letter++;
 		putchar(letter);
 		letter++;
 	}
