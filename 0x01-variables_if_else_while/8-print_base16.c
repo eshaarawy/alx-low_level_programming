@@ -19,7 +19,7 @@ int main(void)
 	{
 		putchar(i);
 	}
-	for (ch = 'a'; ch <= 'f'; i++)
+	for (ch = 'a'; ch <= 'f'; ch++)
 
 	{
 		putchar(ch);
