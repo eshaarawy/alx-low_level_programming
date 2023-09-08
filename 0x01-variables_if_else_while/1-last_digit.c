@@ -5,7 +5,7 @@
 /**
 * main - Entry point
 *
-* Description: positive or negative
+* Description: last digit
 *
 * Return: 0
 */
