@@ -3,7 +3,6 @@
 /**
 * jack_bauer - prints every minute
 *
-* @n: number
 * Return: Always 0.
 */
 void jack_bauer(void)
