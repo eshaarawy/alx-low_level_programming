@@ -8,7 +8,7 @@
 * Return: 1 on success
 */
 
-void _putchar(char c[])
+int _putchar(char c)
 {
-	printf(c);
+	return (write(1, &c, 1));
 }
