@@ -1,12 +1,26 @@
 #include "main.h"
+
 /**
- * _strstr - copy a string
- * @haystack: input value
- * @needle: input value
+ * _strstr -  locates a substring
+ * @haystack: pointer to string
+ * @needle: substring
  *
- * Return: dest
- */
+ * Return: pointer to the begining of the located substring
+*/
 char *_strstr(char *haystack, char *needle)
 {
-	return (haystack);
+	int i, j;
+
+	for (i = 0; haystack[i] != '\0'; i++)
+	{
+		for (j = 0; needle[j] != '\0'; j++)
+		{
+			if (needle[j + i] != needle[j])
+			{
+				break;
+			}
+		}
+		if (needle[j] == '\0')
+		return (&haystack[i]);
+	}
 }

@@ -1,15 +1,18 @@
 #include "main.h"
 
 /**
-* _strlen - string length meow
-* @s: pointer to string
-* Return: length of string
+ * _strlen - returns the length of string s
+ * @s : string wanted
+ *
+ * Return: the length wanted
 */
+
 int _strlen(char *s)
 {
-	int i;
+	int size;
 
-	for (i = 0; *s != '\0'; s++)
-		++i;
-	return (i);
+	for (size = 0; *s != '\0'; s++)
+		size++;
+
+	return (size);
 }
